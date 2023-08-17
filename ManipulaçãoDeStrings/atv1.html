@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 1</title>
+</head>
+<body>
+    <script>
+        function ehPalindromo(str) {
+  str = str.toLowerCase().replace(/\s/g, ""); // TIRAR OS ESPAÇOS E CONVERTER PARA MAÍUSCULAS
+  
+  const reversedStr = str.split("").reverse().join("");
+  
+  return str === reversedStr;
+}
+
+console.log(ehPalindromo("banana"));      // TRUE
+console.log(ehPalindromo("jeovanna")); // FALSE
+
+    </script>
+</body>
+</html>
